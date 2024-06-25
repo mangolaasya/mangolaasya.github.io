@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Above, Below, or On Par? My Salary Analysis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #ffdddd;
+      /* Light pink background */
+      color: #333;
+      /* Dark text color */
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    input[type="text"],
+    select {
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      background-color: #fff;
+      /* White background */
+      color: #ff69b4;
+      /* Pink text color */
+    }
+  </style>
+</head>
+
+<body>
+  <h1>
+    empowHERment <br />
+    Salary Comparison
+  </h1>
+  <h2 style="font-size: 10px; padding-bottom: 10px;">
+      See how your salary compares to the typical salary within the people who share the same education level, years of experience and job title as you!
+    
+  </h2>
+
+
+  <div class="container">
+    <form id="dataForm">
+      <label for="education">Education level:</label><br />
+      <select id="education" name="education">
+        <option value="Bachelor's">Bachelor's</option>
+        <option value="Master's">Master's</option>
+        <option value="PhD">PhD</option>
+      </select><br /><br />
+
+      <label for="experience">Years of Experience:</label><br />
+      <select id="experience" name="experience">
+        <option value="1-2">1-2</option>
+        <option value="3-4">3-4</option>
+        <option value="5+">5+</option>
+      </select><br /><br />
+
+      <label for="salary">Salary Payment:</label><br />
+      <input type="text" id="salary" name="salary" /><br /><br />
+
+      <label for="jobTitle">Job Title:</label><br />
+      <select id="jobTitle" name="jobTitle">
+        <option value="Software Engineer">Software Engineer</option>
+        <option value="Data Analyst">Data Analyst</option>
+        <option value="Senior Manager">Senior Manager</option>
+        <option value="Sales Associate">Sales Associate</option>
+        <option value="Director">Director</option>
+        <option value="Marketing Analyst">Marketing Analyst</option>
+        <option value="Product Manager">Product Manager</option>
+        <option value="Front end Developer">Front end Developer</option>
+        <option value="Senior Software Engineer">Senior Software Engineer</option>
+        <option value="Software Engineer Manager">Software Engineer Manager</option>
+        <option value="Full Stack Engineer">Full Stack Engineer</option>
+      </select><br /><br />
+
+      <input type="submit" value="Submit" />
+      <h2>Search Results:</h2>
+      <div id="results"></div>
+    </form>
+  </div>
+
+  <div id="result"></div>
+
+  <script src="client.js"></script>
+</body>
+
+</html>
+
+
